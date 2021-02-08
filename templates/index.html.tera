@@ -1,0 +1,11 @@
+{% extends "base" %}
+
+{% block content %}
+    <h1>Hi {{name}}</h1>
+    <h3>Here are your tweets:</h3>
+    <ul>
+        {% for s in tweets %}
+            <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
